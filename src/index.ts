@@ -14,10 +14,10 @@ const npmDepCheck = async () => {
   }
 };
 
-const npmDepCheckInstaller = (cli: CAC) => {
+const npmDepCheckInstaller = () => {
   return {
     name: "npmDepCheckInstaller",
-    setup: () => {
+    setup: (cli: CAC) => {
       cli
         .command(
           "depcheck",
