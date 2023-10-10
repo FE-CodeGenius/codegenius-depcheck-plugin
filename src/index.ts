@@ -16,7 +16,9 @@ const npmDepCheck = async () => {
 
 const npmDepCheckInstaller = () => {
   return {
-    name: "npmDepCheckInstaller",
+    name: "depcheck",
+    describe: "运行 depcheck 检查过时的、不正确的和未使用的依赖项",
+    command: "depcheck",
     setup: (cli: CAC) => {
       cli
         .command(
